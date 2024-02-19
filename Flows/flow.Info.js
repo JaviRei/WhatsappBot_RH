@@ -1,35 +1,37 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
+const flowVacantes = require("./flow.acantes");
 const getData = require("../formulas/get.Data");
-const flowVacantes = require("./flow.Vacantes");
+const flowAcantes = require("./flow.acantes");
 
 let vacante_activa = [];
 num_vacantes = null;
 
 // module.exports = addKeyword("1")
 const flowInfo = addKeyword("1")
-  .addAnswer(["*_Vacantes activas_*", "⌛..."])
+  .addAnswer("_*VACANTES ACTIVAS:*_")
   .addAction(async (_, { flowDynamic }) => {
-    const data = await getData();
-    for (key in data) {
-      try {
+    try {
+      const data = await getData();
+      for (const key in data) {
         if (data[key].status == true) {
-          vacante_activa = data[key].nombre_vacante;
-          await flowDynamic(`*• ${parseInt(key) + 1}  ||*  ${vacante_activa}`);
+          vacante_activa[key] = data[key].nombre_vacante;
+          await flowDynamic(`*🔸 ${parseInt(key) + 1}  ||*  ${vacante_activa}`);
           num_vacantes = parseInt(key) + 1;
         }
-      } catch {
-        console.error("Solicitud denegada");
       }
+      console.log(
+        `Datos encontrados con exito, estas son las vacantes activas ${vacante_activa}`
+      );
+    } catch {
+      console.log("No se encontraron datos para la vacante");
     }
   })
+
   .addAnswer(
-    "Selecciona el numero de la vacante de tu interes",
-    // { capture: true },
+    "Selecciona el numero de la vacante de tu interes:",
+    { capture: true },
     async (ctx, { state, fallBack }) => {
       await state.update({ vacante: ctx.body });
-      // const vars = state.getMyState();
-      // console.log(vars);
-      // console.log("eleccion de vacante");
       const data = await getData();
 
       eleccion = parseInt(ctx.body);
@@ -39,7 +41,6 @@ const flowInfo = addKeyword("1")
         console.log(`Acceso exitoso, elección de vacante`);
       }
     },
-    [flowVacantes]
+    [flowAcantes]
   );
-
 module.exports = flowInfo;

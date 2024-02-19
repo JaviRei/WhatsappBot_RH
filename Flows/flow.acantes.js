@@ -15,12 +15,10 @@ for (key in data) {
   }
 }
 
-const flowVacantes = addKeyword("2").addAnswer(
+module.exports = addKeyword("2").addAnswer(
   "Entraste al FORMULARIO",
   null,
   async () => {
-    console.log(res);
+    console.log(data);
   }
 );
-
-module.exports = { flowVacantes };
