@@ -15,8 +15,8 @@ for (key in data) {
   }
 }
 
-const flowVacantes = addKeyword(res).addAnswer(
-  "Entraste al formulario",
+const flowVacantes = addKeyword("2").addAnswer(
+  "Entraste al FORMULARIO",
   null,
   async () => {
     console.log(res);
