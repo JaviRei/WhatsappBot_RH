@@ -1,7 +1,6 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
-const flowVacantes = require("./flow.acantes");
 const getData = require("../formulas/get.Data");
-const flowAcantes = require("./flow.acantes");
+const flowVacantes = require("./flow.Vacantes");
 
 let vacante_activa = [];
 num_vacantes = null;
@@ -43,6 +42,6 @@ const flowInfo = addKeyword("1")
         console.log(`Acceso exitoso, elección de vacante`);
       }
     },
-    [flowAcantes]
+    [flowVacantes]
   );
 module.exports = flowInfo;
