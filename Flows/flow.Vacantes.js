@@ -18,9 +18,8 @@ module.exports = addKeyword(["1", "2", "3", "4", "5"]).addAction(
     const prestaciones = data[vac].prestaciones;
     const ubicacion = data[vac].ubicacion;
     console.log(nombre_vacante);
-    // await flowDynamic(nombre_vacante);
 
-    switch (seleccion.vacante) {
+    switch (vac) {
       case 1:
         await flowDynamic({ media: img });
         await flowDynamic({

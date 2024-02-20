@@ -33,7 +33,7 @@ const flowInfo = addKeyword("1")
     "Selecciona el numero de la vacante de tu interes:",
     { capture: true },
     async (ctx, { state, fallBack }) => {
-      await state.update({ vacante: ctx.body });
+      await state.update({ vacante: parseInt(ctx.body) });
       const data = await getData();
 
       eleccion = parseInt(ctx.body);
