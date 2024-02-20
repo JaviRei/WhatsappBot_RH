@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5213318107706@s.whatsapp.net',
     fromMe: false,
-    id: 'B46A1A63335BD76216',
+    id: 'DEB1E74932F76EB250',
     participant: undefined
   },
-  messageTimestamp: 1708375544,
+  messageTimestamp: 1708444660,
   pushName: 'Javi Enriquez',
   broadcast: false,
   message: Message {
@@ -20,8 +20,8 @@
   from: '5213318107706'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_8135b447-21a8-4408-8a26-10eb27922991',
-  keyword: 'key_4fc224d0-a21a-415f-af1b-ef1c0f51c533',
+  ref: 'ans_2cf27de3-496e-49fa-ba4d-1e46e15c5747',
+  keyword: 'key_bfa747e0-e869-48f3-87be-fc52dd1da000',
   answer: 'Bienvenido a _*Shades de México*_',
   options: {
     media: 'https://scontent.fgdl9-1.fna.fbcdn.net/v/t39.30808-6/277572092_108342191837258_7274138010988978035_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=VI3MhwmvHBwAX9EsttD&_nc_ht=scontent.fgdl9-1.fna&oh=00_AfDX0Iy-mHjNeG5HNwkEIdISyG9kS6-fevQBwOIPHLO7Pg&oe=65D53E69',
@@ -35,11 +35,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'bd4fbd4b508d20d87b95e3daf07d2f04'
+  refSerialize: '6fd67773655960ca4c776f7496586a41'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d66e47a0-83de-4269-b5b5-7b0ecdaf18e1',
-  keyword: 'ans_8135b447-21a8-4408-8a26-10eb27922991',
+  ref: 'ans_6487c50d-595d-459d-a2c3-2d2b2cac9a77',
+  keyword: 'ans_2cf27de3-496e-49fa-ba4d-1e46e15c5747',
   answer: 'Conocé nuestras vacantes Activas y desarrolla tus habilidades con nosotros \n' +
     '\n' +
     '*_Selecciona el numero de la opción deseada:_*\n' +
@@ -57,16 +57,16 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '869b397e76f90280c692788356142323'
+  refSerialize: '3d754abcc820046ea1addb8fae0671b3'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5213318107706@s.whatsapp.net',
     fromMe: false,
-    id: 'DE52F6B345FDF0CB56',
+    id: 'CEB2D80C2F940BC48E',
     participant: undefined
   },
-  messageTimestamp: 1708375554,
+  messageTimestamp: 1708444662,
   pushName: 'Javi Enriquez',
   broadcast: false,
   message: Message {
@@ -81,8 +81,8 @@
   from: '5213318107706'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ddb0c583-10dd-4ff1-a71f-95f2e294e273',
-  keyword: 'key_1f13d56b-be51-45e5-8986-43389de5fb85',
+  ref: 'ans_bd05a623-e4e8-43c0-94fa-5c0d2d7b3dbf',
+  keyword: 'key_2e53abbe-5113-4b14-a2a5-3a2e5db8ab37',
   answer: '_*VACANTES ACTIVAS:*_',
   options: {
     media: null,
@@ -96,11 +96,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '72c6285566e61ae3f04162d2e2905925'
+  refSerialize: '75a338aa04dbb064baf4bb016262f4f4'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c67074e3-8f84-4d30-af8d-f3b9c01b6715',
-  keyword: 'ans_ddb0c583-10dd-4ff1-a71f-95f2e294e273',
+  ref: 'ans_07b62ef9-3f63-4823-8d8c-3c7ea942b571',
+  keyword: 'ans_bd05a623-e4e8-43c0-94fa-5c0d2d7b3dbf',
   answer: '__call_action__',
   options: {
     media: null,
@@ -114,11 +114,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'ad9066010250be01a55fe1f4568e0d86'
+  refSerialize: 'e8b16078669a7a6f958b68ad987f51c5'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ee8d29ad-104b-4a97-aacc-804075602107',
-  keyword: 'ans_c67074e3-8f84-4d30-af8d-f3b9c01b6715',
+  ref: 'ans_fdbca19f-132c-40ee-a9ed-902126556b20',
+  keyword: 'ans_07b62ef9-3f63-4823-8d8c-3c7ea942b571',
   answer: 'Selecciona el numero de la vacante de tu interes:',
   options: {
     media: null,
@@ -132,16 +132,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '97e5d3ec6faf13008d3d22632db9a2ae'
+  refSerialize: 'd4f0fa42a302865d4c98285521ec4409'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5213318107706@s.whatsapp.net',
     fromMe: false,
-    id: '8F73142465904615D3',
+    id: '35B04E2B18A0089764',
     participant: undefined
   },
-  messageTimestamp: 1708375560,
+  messageTimestamp: 1708444673,
   pushName: 'Javi Enriquez',
   broadcast: false,
   message: Message {
@@ -156,8 +156,8 @@
   from: '5213318107706'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2b9bb79d-b29e-4694-9b59-8eb5c62aeb77',
-  keyword: 'key_37b65a08-4afe-4773-9685-c6381b9d7ee5',
+  ref: 'ans_cf40d3f3-b02f-4a73-b67b-317d81adfd35',
+  keyword: 'key_7c17f256-6377-4cfa-bc52-59dd503d4423',
   answer: 'Entraste al FORMULARIO',
   options: {
     media: null,
@@ -171,5 +171,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '055284ab4af5ddf3bce16bd2914c51c7'
+  refSerialize: 'a35c9da6c7184f6a4c649da9cda8bb54'
 }

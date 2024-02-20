@@ -15,7 +15,9 @@ const flowInfo = addKeyword("1")
       for (const key in data) {
         if (data[key].status == true) {
           vacante_activa[key] = data[key].nombre_vacante;
-          await flowDynamic(`*🔸 ${parseInt(key) + 1}  ||*  ${vacante_activa}`);
+          await flowDynamic(
+            `*🔸 ${parseInt(key) + 1}  ||*  ${vacante_activa[key]}`
+          );
           num_vacantes = parseInt(key) + 1;
         }
       }
