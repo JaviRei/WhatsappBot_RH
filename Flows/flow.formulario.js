@@ -1,3 +1,7 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-module.exports = addKeyword("2").addAnswer("Entraste al formulario");
+const flowFormulario = addKeyword(["1", "aplicar"]).addAnswer(
+  "Entraste al formulario"
+);
+
+module.exports = flowFormulario;

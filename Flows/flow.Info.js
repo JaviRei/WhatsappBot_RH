@@ -6,7 +6,7 @@ let vacante_activa = [];
 num_vacantes = null;
 
 // module.exports = addKeyword("1")
-const flowInfo = addKeyword("1")
+const flowInfo = addKeyword(["1", "menu"])
   .addAnswer("_*VACANTES ACTIVAS:*_")
   .addAction(async (_, { flowDynamic }) => {
     try {
@@ -18,6 +18,7 @@ const flowInfo = addKeyword("1")
             `*🔸 ${parseInt(key) + 1}  ||*  ${vacante_activa[key]}`
           );
           num_vacantes = parseInt(key) + 1;
+          // num_vac = num_vacantes
         }
       }
       console.log(
@@ -33,11 +34,12 @@ const flowInfo = addKeyword("1")
     { capture: true },
     async (ctx, { state, fallBack }) => {
       await state.update({ vacante: parseInt(ctx.body) });
-      const data = await getData();
 
       eleccion = parseInt(ctx.body);
-      if (Number.isNaN(eleccion)) {
-        return fallBack("fallback activado");
+      if (Number.isNaN(eleccion) || eleccion > num_vacantes) {
+        return fallBack(
+          `*Error, selección invalida*,\n Selecciona el NUMERO de la vacante correcto:\n`
+        );
       } else {
         console.log(`Acceso exitoso, elección de vacante`);
       }
